@@ -137,7 +137,7 @@ nav ul li a:hover {text-decoration: underline;
 /********MAIN BODY CONTENT******/
 
 article {
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
   background-color: none;
   max-width: 700px;/*set the width of the text and other elements inside the article tag*/
   border: 0px;
@@ -153,7 +153,7 @@ article {
 /* Body headings */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Roboto, sans-serif;
+	font-family:"Roboto", sans-serif;
 	font-weight: 400;
 	color: #000000;}
 

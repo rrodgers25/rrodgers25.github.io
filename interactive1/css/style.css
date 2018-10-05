@@ -79,7 +79,6 @@ header {
 
 /*header h3 byline*/
 .byline {
-    text-transform: uppercase;
     font-size: 12px;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
@@ -91,7 +90,7 @@ header {
 
 /*header h3 a:hover byline link on hover*/
 .byline a:hover {
-  color: #ffffff;/*white*/
+  color: #ff6600;/*orange*/
   text-decoration: underline;
   text-decoration-style: solid;
 }
@@ -105,7 +104,7 @@ Here is a list with examples: https://www.w3schools.com/cssref/css_selectors.asp
 
 /* Navigation styles */
 
-.nav ul {
+nav ul {
     list-style-type: none;
     font-family: Roboto, sans-serif;
     overflow: hidden;
@@ -113,31 +112,31 @@ Here is a list with examples: https://www.w3schools.com/cssref/css_selectors.asp
     text-transform:  uppercase;
 }
 
-.li {
+li {
     float: center;
     display: inline;
 }
 
-.li a {
+li a {
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.li a:hover {
+li a:hover {
     background-color: #111;
 }
 
-.nav ul li a:hover {text-decoration: underline;
+nav ul li a:hover {text-decoration: underline;
 }
 
 
 /********MAIN BODY CONTENT******/
 
-.article {
+article {
   font-family: Open-Sans, sans-serif;
-  max-width: 700px;/*set the width of the text and other elements inside the article tag*/
+  max-width: 700px; /*set the width of the text and other elements inside the article tag*/
   border: 0px;
   padding: 20px;/*give it padding all around*/
   margin: auto;

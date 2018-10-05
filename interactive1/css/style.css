@@ -38,7 +38,7 @@ Check what the pseudo elements :before and :after are for https://www.w3schools.
 you can give specific text elements their own rules by adding a selector { property: value;} 
 When you do, you override this global rule*/
 body {
-  font-family: 'Noto serif', serif; 
+  font-family: 'Libre Baskerville', serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -138,7 +138,7 @@ nav ul li a:hover {text-decoration: underline;
 
 article {
   font-family: 'Libre Baskerville', sans-serif;
-  background-color: lightgrey;
+  background-color: none;
   max-width: 700px;/*set the width of the text and other elements inside the article tag*/
   border: 0px;
   padding: 20px;/*give it padding all around*/

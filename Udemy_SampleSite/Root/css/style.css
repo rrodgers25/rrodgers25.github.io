@@ -1,0 +1,84 @@
+/*Selector {
+	Property: value;
+}*/
+/* Star Element below = Everything  */
+
+* {
+	text-align:left;
+}
+
+body {
+	background-image: url(images/outerspacewhite.jpg);
+	background-size: cover;
+}
+
+h2 {
+	color: #851010;
+	text-align: center;
+	border: 5px solid rgba(140, 117, 117, 0.5);
+	cursor: pointer; 
+	/* cursor: pointer; turns into a hand when scrolled over */
+}
+p, .p1, .p2 {
+	color: #851010;
+}
+
+img {
+	float: right;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: none;
+	font-size: 70%;
+}
+
+.p1 {
+	font-family: 'Lobster Two', cursive;
+	letter-spacing: 1px;
+	/* if no Lobster (but it's embedded from Google fonts.com up in the Head), then use Arial. If no Arial, then use Georgia etc.
+	/* text-transform: lowercase, uppercase, line-through*/
+	/* text-decoration: underline;*/
+	/* leading STANDARD = 20px */
+	line-height: 20px;
+	font-weight: bold;
+}
+
+.p2 {
+	font-family: Veranda;
+	/*text-transform: lowercase, uppercase, line-through*/
+	/*text-decoration: underline;*/
+	/*leading STANDARD = 20px */
+	line-height: 20px;
+	font-style: italic;
+	font-size: 80%;
+}
+
+/* list-style: none; no bullet points for the nav */
+/* display: inline-block; nav links on one line */
+li {
+	list-style: none; 
+	display: inline-block;
+}
+
+.webtext:first-child {
+	border: 2px dashed green;
+	text-align: center;
+}
+
+.active {
+	color: blue;
+}
+
+#div1 {
+	background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+	background: rgba(127, 127, 0, 0.2);
+}
+

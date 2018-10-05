@@ -1,0 +1,41 @@
+body {
+	background-image: url(images/wintergrasses.jpg);
+	background-size: cover;
+}
+
+h2s {
+	color: #406851;
+}
+
+/* list-style: none; no bullet points for the nav */
+/* display: inline-block; nav links on one line */
+li {
+	list-style: none; 
+	display: inline-block;
+}
+
+.boxmodel { 
+	text-align: center;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	/* it defaults to the typeface size
+	for custom: 20px is the standard width and height of text space itself! 
+	(before the padding buffer that separates the text from border ) */
+	padding: 5px 5px;
+	border: 5px solid brown;
+	margin: 0px 20px;
+	/* top, right, bottom, left
+	 or
+	 top/bottom, left/right	*/
+}
+
+h2 {
+	color: blue;
+}
+p {
+	font-size: 20px;
+}
+span {
+	font-size: 2em;
+}

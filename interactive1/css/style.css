@@ -137,6 +137,7 @@ nav ul li a:hover {text-decoration: underline;
 /********MAIN BODY CONTENT******/
 
 article {
+  font-family: 'Libre Baskerville', sans-serif;
   background-color: lightgrey;
   max-width: 700px;/*set the width of the text and other elements inside the article tag*/
   border: 0px;

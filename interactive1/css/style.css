@@ -34,11 +34,12 @@ Check what the pseudo elements :before and :after are for https://www.w3schools.
   box-sizing: inherit;
 }
 
+/***************** IMPORTANT ************/
 /*rules for all the body text
 you can give specific text elements their own rules by adding a selector { property: value;} 
 When you do, you override this global rule*/
+
 body {
-  font-family: 'Open-Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -135,22 +136,18 @@ nav ul li a:hover {text-decoration: underline;
 /********MAIN BODY CONTENT******/
 
 article {
-  font-family: Open-Sans, sans-serif;
+  font-family: Imperial, sans-serif;
   max-width: 700px; /*set the width of the text and other elements inside the article tag*/
   border: 0px;
   padding: 20px;/*give it padding all around*/
   margin: auto;
 }
-  /* set the margin property to auto to horizontally center the element
-  within its container. If you do margin: 0 auto that means:
-  top and bottom give it a margin 0, and the left and right margin auto.
-  More:  */
 
 
 /* Body headings */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Roboto, sans-serif;
+	font-family: Imperial, sans-serif;
 	font-weight: 400;
 	color: #000000;}
 
@@ -203,7 +200,7 @@ to make sure is the same width of the image*/
 /* Links in body */
 
 a {
-  color: #ff6600;/*orange*/
+  color: #D3D3D3;/*lightgray*/
   text-decoration: none;
 }
 
@@ -216,10 +213,10 @@ a:hover {
 /* Blockquotes */
 
 blockquote {
-  border-top: 6px solid #ff6600;/*orange top border line of 6px*/
-  border-bottom: 2px solid #ff6600;/*orange bottom border line of 2px*/
+  border-top: 6px solid #D3D3D3;
+  border-bottom: 2px solid #D3D3D3;
   color: #000000;
-  font-family: Roboto, sans-serif;
+  font-family: Imperial, sans-serif;
   font-size: 24px;
   margin: 30px;
   padding: 30px;
@@ -268,7 +265,7 @@ footer ul li a {
 
 /*links in footer on hover*/
 footer ul li a:hover {
-  color: #ff6600;/*orange*/
+  color: #D3D3D3;/*lightgray*/
   text-decoration: underline;
 }
 

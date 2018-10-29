@@ -157,14 +157,12 @@ h2 {font-size: 24px;}
 
 figure {
   display: block;
-
+  align-content: center;
+  max-width:700px;
+  height: auto;
   margin: 0px;
 
 }
-
-
-/*COMMENT THIS OUT FOR NOW
-
 
 .sidebyside1 { 
       max-width: 250px;
@@ -198,7 +196,7 @@ figcaption {
 
 .img-wrapper figure {width: 200px;}
 
-  END OF COMMENT THIS OUT FOR NOW */
+
 
 * {
     box-sizing: border-box;

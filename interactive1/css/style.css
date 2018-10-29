@@ -151,16 +151,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	color: #000000;}
 
-h2 {font-size: 24px;}/*I am using h2 for subtitles*/
+h2 {font-size: 24px;}
 
 /* Image, figure and figcaption styles from general to specific */
 
 figure {
   display: block;
-  /* in this way it fills the width of the parent element article */
+
   margin: 0px;
-  /* no margin to avoid extra space around the element */
+
 }
+
+
+/*COMMENT THIS OUT FOR NOW
+
 
 .sidebyside1 { 
       max-width: 250px;
@@ -170,14 +174,12 @@ figure {
       max-width: 250px;
       height: auto;
 }
-/*give images a max-width of 100%*/
-img {
-  max-width: 100%;
-  height: auto;
-  /* adjust the height of image to the max-width */
-}
 
-/*figcaption inherits font size from global styles*/
+img {
+  max-width: 50%;
+  height: auto;
+  }
+
 figcaption {
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -187,15 +189,27 @@ figcaption {
   padding: 2px 2px;
 }
 
-/*div container for the 3 images and captions, using the class .img-wrapper*/
+
 .img-wrapper {
   display: flex;
-  flex-direction: row; /*align in the same row*/
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.img-wrapper figure {width: 200px;}/*give the caption text a width of 200 px
-to make sure is the same width of the image*/
+.img-wrapper figure {width: 200px;}
+
+  END OF COMMENT THIS OUT FOR NOW */
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
 
 /* Links in body */
 

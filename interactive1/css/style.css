@@ -260,6 +260,10 @@ footer {
   color: #ffffff;/*white*/
 }
 
+.contact-links {
+  text-align: center;
+}
+
 .copyright {
   font-family: "Source Serif Pro", Georgia, serif;
   font-size: 10pt;

@@ -53,7 +53,7 @@ header {
 }
 
 header {
-  background-color: #D3D3D3; /*lightgray*/
+  background-color: #ff6600; 
   background-size: cover; 
   color: black;
 
@@ -91,7 +91,7 @@ header {
 
 /*header h3 a:hover byline link on hover*/
 .byline a:hover {
-  color: #D3D3D3;/*light gray*/
+  color: #D3D3D3;/*lightgray*/
   text-decoration: underline;
   text-decoration-style: solid;
 }

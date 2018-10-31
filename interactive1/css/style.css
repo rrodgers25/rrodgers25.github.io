@@ -1,16 +1,6 @@
 
 
 /******************************************************
-TABLE OF CONTENTS
-1. Global styles (things that apply to all elements of site: general display, general margin, general font)
-2. Header & Nav (specific to header and nav)
-3. Main body Content (headings, images and figures, blockquotes)
-4. Twitter embed codes
-5. Footer Content
-6. Media Queries
-******************************************************/
-
-/******************************************************
 1. Global styles
 (things that apply to all elements of site)
 *******************************************************/
@@ -189,8 +179,6 @@ figure2 {
 }
 
 img {
-  max-width: 100%; /* THIS CHANGED THEIMAGE SIZE TO MATCH SIZE OF ARTICLE With padding */
-  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -208,9 +196,9 @@ figcaption {
 
 .img-wrapper {    /* Two images side by side??  */
   display: flex; 
-  flex: 50%;  /* I added this to make the width 100% of the body */
+  flex: 100%;  /* I added this to make the width of 2 pics 100% of the body */
   flex-direction: column;
-  justify-content: space-between; /* I added this to make the width 100% of the body */
+  justify-content: space-between; 
   
 }
 
@@ -222,7 +210,7 @@ figcaption {
 /* Links in body */
 
 a {
-  color: #0099ff;/*blue link color that matches vimeo.com*/ /* ALL the links? */
+  color: #0099ff;/*blue link color that matches vimeo.com*/
   text-decoration: none;
 }
 

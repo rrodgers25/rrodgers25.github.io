@@ -15,10 +15,16 @@ TABLE OF CONTENTS
 (things that apply to all elements of site)
 *******************************************************/
 
+/******************************************************
+Notes for colors and styles: 
+color: #0099ff;    /* blue link color that matches vimeo.com
 
-/*Make everything inside the <html> act as a block.
-box-sizing: used to tell the browser what the sizing properties (width and height) should include.
-border-box: The width and height properties (and min/max properties) includes content, padding and border, but not the margin */
+
+
+*******************************************************/
+
+
+
 
 html {
   box-sizing: border-box;
@@ -53,7 +59,7 @@ header {
 }
 
 header {
-  background-color: #ff6600; 
+  background-color: #D3D3D3; /*lightgray*/
   background-size: cover; 
   color: black;
 
@@ -61,7 +67,7 @@ header {
 
 /*header h1 story title*/
 .headline {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'apercu', 'helvetica neue', sans-serif;
   font-size: 40px;
   font-weight: bolder;
   line-height: 1.2;
@@ -71,7 +77,7 @@ header {
 
 /*header h2 lead*/
 .subhead {
-  font-family:'Open-Sans', sans-serif;/*exception: the lead must use Noto serif instead of Roboto*/
+  font-family:'apercu', 'helvetica neue', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
@@ -80,10 +86,11 @@ header {
 
 /*header h3 byline*/
 .byline {
-    font-size: 16px;
-    font-family: Open-Sans, sans-serif;
+    font-size: 14px;
+    font-family: "Source Serif Pro", Georgia, serif;
     font-weight: regular;
     padding-left: 40px;
+    color: lightgray;
     /* add 40px of padding space in the bottom of byline*/
 }
 
@@ -91,13 +98,13 @@ header {
 
 /*header h3 a:hover byline link on hover*/
 .byline a:hover {
-  color: #D3D3D3;/*lightgray*/
+  color: #0099ff;/*blue link color that matches vimeo.com*/
   text-decoration: underline;
   text-decoration-style: solid;
 }
 
 /* Wondering what a bunch of selectors are doing together?
-Selectors can be combined and will behave according to the syntaxis you used to combine them.
+Selectors can be combined and will behave according to the syntax is you used to combine them.
 .author a means	select all <a> elements inside <h3> elements that are inside the <header> element
 .author a:hover means select all <a:hover> elements inside <h3> elements that are inside the <header> element
 A easy rule: the selector at the far right is the one that will be activated.
@@ -122,7 +129,7 @@ li a {
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: small-caps;
 }
 
 li a:hover {
@@ -136,7 +143,7 @@ nav ul li a:hover {text-decoration: underline;
 /********MAIN BODY CONTENT******/
 
 article {
-  font-family: Imperial, sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   max-width: 700px; /*set the width of the text and other elements inside the article tag*/
   border: 0px;
   padding: 20px;/*give it padding all around*/
@@ -147,7 +154,7 @@ article {
 /* Body headings */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Imperial, sans-serif;
+	font-family: "Source Serif Pro", Georgia, serif;
 	font-weight: 400;
 	color: #000000;}
 
@@ -164,6 +171,14 @@ figure {
 
 }
 
+figure2 {
+  display: block;
+  align-content: center;
+  max-width:30%;
+  height: auto;
+  margin: 0px;
+}
+
 .sidebyside1 { 
       max-width: 250px;
       height: auto;
@@ -174,13 +189,16 @@ figure {
 }
 
 img {
-  max-width: 50%;
+  max-width: 100%; /* THIS CHANGED THEIMAGE SIZE TO MATCH SIZE OF ARTICLE With padding */
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   }
 
 figcaption {
   text-align: center;
-  font-family: Roboto, sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 10pt;
   font-weight: 400;
   line-height: 1.1;
@@ -188,43 +206,44 @@ figcaption {
 }
 
 
-.img-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.img-wrapper {    /* Two images side by side??  */
+  display: flex; 
+  flex: 50%;  /* I added this to make the width 100% of the body */
+  flex-direction: column;
+  justify-content: space-between; /* I added this to make the width 100% of the body */
+  
 }
 
-.img-wrapper figure {width: 200px;}
-
+.img-wrapper figure {
+  width: 50%; 
+}
 
 
 /* Links in body */
 
 a {
-  color: ##737CA1;/*slate blue*/
+  color: #0099ff;/*blue link color that matches vimeo.com*/ /* ALL the links? */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;/*when cursor is over the link show the link with underline*/
-  text-decoration-color: #737CA1;/*black for the underline*/
+  text-decoration-color: #000000;/*black for the underline*/
 }
 
 
 /* Blockquotes */
 
 blockquote {
-  border-top: 6px solid #D3D3D3;
-  border-bottom: 2px solid #D3D3D3;
-  color: #000000;
-  font-family: Imperial, sans-serif;
+  border-top: 6px solid #0099ff; ;
+  border-bottom: 6px solid #0099ff; ;
+  color: #000000; /* black */
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 24px;
   margin: 30px;
   padding: 30px;
   text-align: center;
 }
-
-
 
 /******************************************************
 *******************************************************
@@ -242,7 +261,7 @@ footer {
 }
 
 .copyright {
-  font-family: Open Sans, sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 10pt;
   font-weight: 400px;
   color: #ffffff;
@@ -252,21 +271,20 @@ footer {
 /*Footer list of links aligned horizontal*/
 footer ul li {
   display: inline;
-  /*top right bottom left or give it 0px of top space, 10 px to
-    the right, 0px to the bottom and 10px to the left. To remember it, this rule is also called
-    TRouBLE or TRBL for Top Right Bottom Left*/
-}
+
 
 /*links in footer*/
 footer ul li a {
-  color: #ffffff;/*white*/
-  text-decoration: none;
-  text-transform: uppercase;/*make all links uppercase*/
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: 10pt;
+  font-weight: 400px;
+  color: #ffffff;
+  text-align: center;
 }
 
 /*links in footer on hover*/
 footer ul li a:hover {
-  color: #D3D3D3;/*lightgray*/
+  color: #0099ff; ;/*lightgray*/
   text-decoration: underline;
 }
 
@@ -295,17 +313,17 @@ footer ul li a:hover {
     font-size: 24px;
   }
   .summary/*header h2 lead*/{
-    font-size: 18px;
+    font-size: 14px;
     margin: 0 auto;
   }
   .author/*header h3 byline*/{
-    font-size: 14px;
+    font-size: 10px;
   }
   p {
     font-size: 16px;
   }
   figcaption {
-    font-size: 14px;
+    font-size: 12px;
   }
   blockquote {
     font-size: 18px;
@@ -314,7 +332,6 @@ footer ul li a:hover {
   so they images align vertical in order up to down */
   .img-wrapper {
   display: flex;
-  /* flex-wrap: wrap;  Delete this one after testing mediaqueries for images*/
   flex-direction: column;/*align vertically image after image*/
   justify-content: space-between;
 }

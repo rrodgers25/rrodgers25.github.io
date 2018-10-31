@@ -201,13 +201,13 @@ figcaption {
 /* Links in body */
 
 a {
-  color: #D3D3D3;/*lightgray*/
+  color: ##737CA1;/*slate blue*/
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;/*when cursor is over the link show the link with underline*/
-  text-decoration-color: #000000;/*black for the underline*/
+  text-decoration-color: #737CA1;/*black for the underline*/
 }
 
 

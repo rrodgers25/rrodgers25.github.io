@@ -146,7 +146,7 @@ article {
   font-family: "Source Serif Pro", Georgia, serif;
   max-width: 700px; /*set the width of the text and other elements inside the article tag*/
   border: 0px;
-  padding: 20px;/*give it padding all around*/
+  padding: 2px;/*give it padding all around*/
   margin: auto;
 }
 
@@ -267,7 +267,7 @@ end of comment this out for now */
 /* Links in body */
 
 a {
-  color: #0099ff;/*blue link color that matches vimeo.com*/ /* ALL the links? */
+  color: #0099ff;/*blue link color that matches vimeo.com*/ 
   text-decoration: none;
 }
 

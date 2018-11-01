@@ -1,30 +1,10 @@
 
 
 /******************************************************
-TABLE OF CONTENTS
-1. Global styles (things that apply to all elements of site: general display, general margin, general font)
-2. Header & Nav (specific to header and nav)
-3. Main body Content (headings, images and figures, blockquotes)
-4. Twitter embed codes
-5. Footer Content
-6. Media Queries
-******************************************************/
-
-/******************************************************
-1. Global styles
-(things that apply to all elements of site)
-*******************************************************/
-
-/******************************************************
 Notes for colors and styles: 
 color: #0099ff;    /* blue link color that matches vimeo.com
 
-
-
 *******************************************************/
-
-
-
 
 html {
   box-sizing: border-box;
@@ -78,9 +58,9 @@ header {
 /*header h2 lead*/
 .subhead {
   font-family:'apercu', 'helvetica neue', sans-serif;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 2;
   padding-bottom: 50px;
 }
 
@@ -145,8 +125,8 @@ nav ul li a:hover {text-decoration: underline;
 article {
   font-family: "Source Serif Pro", Georgia, serif;
   max-width: 700px; /*set the width of the text and other elements inside the article tag*/
-  border: 0px;
-  padding: 2px;/*give it padding all around*/
+  border: 20px;
+  padding: 10px 20px 10px 20px;/*give it padding all around*/
   margin: auto;
 }
 
@@ -203,14 +183,14 @@ figcaption {
   font-family: "Source Serif Pro", Georgia, serif;
   font-size: 10pt;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.5;
   padding: 2px 2px;
 }
 
 
 .img-wrapper {    /* Two images side by side??  */
   display: flex; 
-  flex: 50%;  /* I added this to make the width 100% of the body */
+  flex: 100%;  /* I added this to make the width 100% of the body */
   flex-direction: column;
   justify-content: space-between; /* I added this to make the width 100% of the body */
   

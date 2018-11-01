@@ -179,6 +179,8 @@ figure2 {
   margin: 0px;
 }
 
+/*new insert*/ 
+
 .sidebyside1 { 
       max-width: 250px;
       height: auto;
@@ -215,9 +217,52 @@ figcaption {
 }
 
 .img-wrapper figure {
+  width: 50%;
+  }
+
+/*end of new insert */
+
+/* Comment this out for now
+.sidebyside1 { 
+      max-width: 250px;
+      height: auto;
+}
+.sidebyside2 { 
+      max-width: 250px;
+      height: auto;
+}
+
+img {
+  max-width: 100%; THIS CHANGED THE IMAGE SIZE TO MATCH SIZE OF ARTICLE With padding 
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+
+figcaption {
+  text-align: center;
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: 10pt;
+  font-weight: 400;
+  line-height: 1.1;
+  padding: 2px 2px;
+}
+
+
+.img-wrapper {    /* Two images side by side??  *
+  display: flex; 
+  flex: 50%;  /* I added this to make the width 100% of the body *
+  flex-direction: column;
+  justify-content: space-between; /* I added this to make the width 100% of the body *
+  
+}
+
+.img-wrapper figure {
   width: 50%; 
 }
 
+end of comment this out for now */
 
 /* Links in body */
 

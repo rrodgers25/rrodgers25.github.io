@@ -142,34 +142,12 @@ h2 {font-size: 24px;}
 
 /* Image, figure and figcaption styles from general to specific */
 
-figure {
-  display: block;
-  align-content: center;
-  max-width:700px;
-  height: auto;
-  margin: 0px;
 
-}
-
-
-/*new insert*/ 
 
 /* Comment out
 
-
-
 end of Comment out */
 
-.sidebyside1 {
-    float: left;
-    width: 50%;
-    padding: 5px;
-}
-.sidebyside2 {
-    float: right;
-    width: 50%;
-    padding: 5px;
-}
 
 img {
   max-width: 100%; /* THIS CHANGED THEIMAGE SIZE TO MATCH SIZE OF ARTICLE With padding */
@@ -188,24 +166,14 @@ figcaption {
   padding: 2px 2px;
 }
 
-.sidecaps {
-    float: center;
-    width: 100%;
-    padding: 5px;
-}
-
-
-.img-wrapper {    /* Two images side by side?? */  
-  display: flex; 
-  flex: 50%;  /* I added this to make the width 100% of the body */
-  flex-direction: column;
-  justify-content: space-between; /* I added this to make the width 100% of the body */
-  }
-
 
 .img-wrapper figure {
   width: 50%;
   }
+
+
+
+
 
 /*end of new insert */
 

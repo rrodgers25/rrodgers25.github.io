@@ -1,0 +1,341 @@
+
+
+/******************************************************
+Notes for colors and styles: 
+color: #0099ff;    /* blue link color that matches vimeo.com
+
+*******************************************************/
+
+html {
+  box-sizing: border-box;
+}
+
+/* The asterisk * used below means wildcard or affect everything.
+box-sizing: inherit, means inherit the property border-box from its parent element html.
+Check what the pseudo elements :before and :after are for https://www.w3schools.com/CSS/css_pseudo_elements.asp */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/***************** IMPORTANT ************/
+/*rules for all the body text
+you can give specific text elements their own rules by adding a selector { property: value;} 
+When you do, you override this global rule*/
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* Header */
+
+/* EVERYTHING IS CENTERED*/
+header {
+  text-align: center;
+}
+
+header {
+  background-color: #D3D3D3; /*lightgray*/
+  background-size: cover; 
+  color: black;
+
+}
+/*header h1 story title*/
+.headline {
+  font-family: 'apercu', 'helvetica neue', sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 1.2;
+  text-align: center;
+  padding: 10px 20px 0px 20px; Top, right, bottom, left 
+}
+
+/*header h2 lead*/
+.subhead {
+  font-family:'apercu', 'helvetica neue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-bottom: 50px;
+}
+
+
+/*header h3 byline*/
+.byline {
+    font-size: 14px;
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-weight: regular;
+    padding-left: 40px;
+    color: lightgray;
+    /* add 40px of padding space in the bottom of byline*/
+}
+
+/*header h3 a byline link*/
+
+/*header h3 a:hover byline link on hover*/
+.byline a:hover {
+  color: #0099ff;/*blue link color that matches vimeo.com*/
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+/* Wondering what a bunch of selectors are doing together?
+Selectors can be combined and will behave according to the syntax is you used to combine them.
+.author a means select all <a> elements inside <h3> elements that are inside the <header> element
+.author a:hover means select all <a:hover> elements inside <h3> elements that are inside the <header> element
+A easy rule: the selector at the far right is the one that will be activated.
+Here is a list with examples: https://www.w3schools.com/cssref/css_selectors.asp */
+
+/* Navigation styles */
+
+nav ul {
+    list-style-type: none;
+    font-family: Roboto, sans-serif;
+    overflow: hidden;
+    background-color: #333; /*light black */
+    text-transform:  uppercase;
+}
+
+li {
+    float: center;
+    display: inline;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: small-caps;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+nav ul li a:hover {text-decoration: underline;
+}
+
+
+/********MAIN BODY CONTENT******/
+
+article {
+  font-family: "Source Serif Pro", Georgia, serif;
+  max-width: 700px; /*set the width of the text and other elements inside the article tag*/
+  border: 20px;
+  padding: 10px 20px 10px 20px;/*give it padding all around*/
+  margin: auto;
+}
+
+
+/* Body headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-weight: 400;
+  color: #000000;}
+
+h2 {font-size: 24px;}
+
+/* Image, figure and figcaption styles from general to specific */
+
+figure {
+  display: block;
+  align-content: center;
+  max-width:700px;
+  height: auto;
+  margin: 0px;
+
+}
+
+
+/*new insert*/ 
+
+/* Comment out
+
+
+
+end of Comment out */
+
+.sidebyside1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.sidebyside2 {
+    float: right;
+    width: 50%;
+    padding: 5px;
+}
+
+img {
+  max-width: 100%; /* THIS CHANGED THEIMAGE SIZE TO MATCH SIZE OF ARTICLE With padding */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+figcaption {
+  text-align: center;
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: 10pt;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 2px 2px;
+}
+
+.sidecaps {
+    float: center;
+    width: 100%;
+    padding: 5px;
+}
+
+
+.img-wrapper {    /* Two images side by side?? */  
+  display: flex; 
+  flex: 50%;  /* I added this to make the width 100% of the body */
+  flex-direction: column;
+  justify-content: space-between; /* I added this to make the width 100% of the body */
+  }
+
+
+.img-wrapper figure {
+  width: 50%;
+  }
+
+/*end of new insert */
+
+
+
+/* Links in body */
+
+a {
+  color: #0099ff;/*blue link color that matches vimeo.com*/ 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;/*when cursor is over the link show the link with underline*/
+  text-decoration-color: #000000;/*black for the underline*/
+}
+
+
+/* Blockquotes */
+
+blockquote {
+  border-top: 6px solid #0099ff; ;
+  border-bottom: 6px solid #0099ff; ;
+  color: #000000; /* black */
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: 24px;
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+/******************************************************
+*******************************************************
+4. Footer content
+*******************************************************
+******************************************************/
+
+
+footer {
+  padding: 20px 0px; /* Top, right, bottom, left */
+  width: 100%;/*Make navigation 100% width of the viewport*/
+  /*height: 100px;Give footer 200px of height*/
+  background: #000000;/*black*/;
+  color: #ffffff;/*white*/
+}
+
+.contact-links {
+  text-align: center;
+}
+
+.copyright {
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: 10pt;
+  font-weight: 400px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*Footer list of links aligned horizontal*/
+footer ul li {
+  display: inline;
+
+
+/*links in footer*/
+footer ul li a {
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: 10pt;
+  font-weight: 400px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*links in footer on hover*/
+footer ul li a:hover {
+  color: #0099ff; ;/*lightgray*/
+  text-decoration: underline;
+}
+
+/******************************************************
+*******************************************************
+6. Mediaqueries
+*******************************************************
+******************************************************/
+
+
+/* MEDIA QUERIES. The syntax for media queries looks like this.
+  The first part " @media (max-width: 700px) { " is setting a condition - in this case that the browser should be smaller than 500px - and when that condition is true the CSS inside gets activated. So that means that if the browser is smaller than 500 px of width then make the body background red. */
+
+@media (max-width: 700px) {
+  /* Now after that add some styles that will make the page look better at narrower widths and mobile devices.*/
+  li {
+    display: block;
+    padding: 5px;
+  }
+  /*navigation links should sit on top of each other rather than inline*/
+  nav ul li a/*links in nav menu*/{
+    font-size: 12px;
+  }
+  /*font should be smaller when the browser is small */
+  .display/*header h1 story title*/{
+    font-size: 24px;
+  }
+  .summary/*header h2 lead*/{
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  .author/*header h3 byline*/{
+    font-size: 10px;
+  }
+  p {
+    font-size: 16px;
+  }
+  figcaption {
+    font-size: 12px;
+  }
+  blockquote {
+    font-size: 18px;
+  }
+  /*div container for the 3 images and captions, change flex direction to column instead of row
+  so they images align vertical in order up to down */
+  .img-wrapper {
+  display: flex;
+  flex-direction: column;/*align vertically image after image*/
+  justify-content: space-between;
+}
+  footer ul li {
+  display: block;/*align links in footer vertically*/
+  padding: 5px;
+}
+
+  footer ul li a {
+  font-size: 12px;
+}

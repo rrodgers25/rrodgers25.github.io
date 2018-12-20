@@ -26,7 +26,7 @@ you can give specific text elements their own rules by adding a selector { prope
 When you do, you override this global rule*/
 
 body {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
 }
 

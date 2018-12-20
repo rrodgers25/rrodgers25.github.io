@@ -25,8 +25,8 @@ Check what the pseudo elements :before and :after are for https://www.w3schools.
 you can give specific text elements their own rules by adding a selector { property: value;} 
 When you do, you override this global rule*/
 
-body {
-  font-size: 20px;
+article {
+  font-size: 30px;
   line-height: 1.5;
 }
 
@@ -77,18 +77,16 @@ header {
 /*header h3 a byline link*/
 
 /*header h3 a:hover byline link on hover*/
-.byline a:hover {
+.byline a: hover {
+  font-size: 12pt;
   color: #0099ff;/*blue link color that matches vimeo.com*/
   text-decoration: underline;
   text-decoration-style: solid;
 }
 
-/* Wondering what a bunch of selectors are doing together?
-Selectors can be combined and will behave according to the syntax is you used to combine them.
-.author a means select all <a> elements inside <h3> elements that are inside the <header> element
-.author a:hover means select all <a:hover> elements inside <h3> elements that are inside the <header> element
-A easy rule: the selector at the far right is the one that will be activated.
-Here is a list with examples: https://www.w3schools.com/cssref/css_selectors.asp */
+.date {
+  font-size: 12pt;
+}
 
 /* Navigation styles */
 

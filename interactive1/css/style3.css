@@ -54,7 +54,6 @@ header {
   padding: 10px 20px 0px 20px; Top, right, bottom, left 
 }
 
-/*header h2 lead*/
 .subhead {
   font-family:'apercu', 'helvetica neue', sans-serif;
   font-size: 18px;
@@ -62,7 +61,6 @@ header {
   line-height: 1.2;
   padding-bottom: 50px;
 }
-
 
 /*header h3 byline*/
 .byline {
